@@ -1,0 +1,9 @@
+*****css*****
+selector class,id,*, combinators,pseudo elements nth child pseudo class - active 
+box model
+position
+z-index 
+float
+round corners {border radius:10% if % is 50 then it turns round 
+2D transforms 3D transform 
+media queries{s(320-480)}{m(481-540){l(541-767){xl(797-1098)}
