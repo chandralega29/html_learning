@@ -2,30 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Select Reset Button</title>
+    <title>Select  Button</title>
+	<style>
+	.button label,
+    .button select,
+    .button input{
+	display:block;
+	margin-bottom:5px;	
+	}
+	.button button{
+	display:inline-block;
+	margin-top:5px;
+	}
+	</style>
 </head>
 <body>
 
 <form>
+<div class="button">
 
-    <label>Select a language:</label><br>
-    <select name="language">
+    <label for="choose">Select a language:</label>
+    <select name="language" id="choose" required>
         <option value="">-- Select --</option>
         <option>java</option>
         <option>python</option>
         <option>php</option>
     </select>
-    <br><br>
+    
 
-    <label>Enter notes:</label><br>
-    <input type="text" name="notes">
-    <br><br>
+    <label for="lang">why you prefer this language over other languages:</label>
+    <input type="text" id="lang" name="reason" required>
+    
+    <input type="reset" value="Reset" >
 
-    <input type="reset" value="Reset">
-
-    <button type="submit">Submit</button>
+    <button type="submit" >Submit</button>
 
     <button type="button" onclick="alert('Button clicked!')">Click </button>
+	
+	</div>
 
 </form>
 

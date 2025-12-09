@@ -1,0 +1,121 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>html</title>
+<style>
+.headings{
+color:#0000ff;
+}
+.paragraph{
+color:#00ffff;
+display:block;
+}
+.table table, 
+.table thead, 
+.table tbody{
+border:#ff69B4;
+border-collapse:collapse;
+color:#ff69B4;
+margin-bottom:20px;
+}
+.form label,
+.form input,
+.form select,
+.form textarea{
+color:#f08080;
+display:block;
+marign-top:10px;
+}
+</style>
+</head>
+<body>
+<h1>OVERVIEW OF HTML</h1>
+<div class="headings">
+<h4>headings:</h4>
+<h1>A</h1>
+<h2>A</h2>
+<h3>A</h3>
+<h4>A</h4>
+<h5>A</h5>
+<h6>A</h6>
+</div>
+
+
+<div class="paragraph">
+<p>“This is a paragraph tag. I named this div as ‘paragraph’ so I can add CSS to it.”</p>
+</div>
+
+
+<div class="table">
+<table border="1">
+<thead>
+<tr>
+<th rowspan="2"> name</th>
+<th rowspan="2">age</th>
+<th colspan="3">gender</th>
+</tr>
+<tr>
+<th>female</th>
+<th>male</th>
+<th>others</th>
+</tr>
+</thead>
+<tr>
+<td>chandra</td>
+<td>21</td>
+<td>female</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>bob</td>
+<td>22</td>
+<td>-</td>
+<td>male</td>
+<td>-</td>
+</tr>
+<tr>
+<td>kavi</td>
+<td>2</td>
+<td>female</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>yuki</td>
+<td>1</td>
+<td>female</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="form">
+<form>
+<label for="uname">Enter your name:</label>
+<input type="text" id="uname" name="username">
+<label for="pass">Enter your password:</label>
+<label for="reason">what is your fav subject?and give reason.</label>
+<textarea id="reason" rows="3" cols="10"></textarea>
+<input type="password" id="pass" name="user_password">
+<label for="fav">Enter your favourite fruit</label>
+<select id="fav" name="fav_fruit">
+<option value="">--Select fav fruit--</option>
+<option>mango</option>
+<option>papaya</option>
+<option>apple</option>
+</select>
+</form>
+</div>
+
+<div class="iframe">
+<h5>youtube</h5>
+<iframe
+src="https://www.youtube.com/embed/3wDiqlTNlfQ?si=VRk6z_iPfrvYUTm-" width="50%" height="50%">
+</body>
+</html>
+
