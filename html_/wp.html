@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        CSS Media Query
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+	body{
+	background-color:aqua;
+	}
+	.par{
+	color:red;
+	width: 33%;
+	float: left;
+	}
+	.take-rest{
+			color: green;
+			display: block;
+			}
+        @media (min-width: 320px) and (max-width: 480px) {
+		body{
+	background-color: blue;
+	}
+            div.test {
+                background: red;
+				width: 100%;
+            }
+			.par{
+			background-color:black;
+			color: #fff;
+			width: 100%;
+			}
+			.take-rest{
+			color: green;
+			display: none;
+			}
+			}
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            div.test {
+                background: pink;
+            }
+			div.par{
+			background-color:gray;
+			}
+			
+			
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            div.test {
+                background: green;
+				
+				
+            }
+			div.par{
+			background-color:black;
+			}
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            div.test {
+                background: Yellow;
+				width: 33%;
+				float: left;
+            }
+			div.par{
+			background-color:gray;
+			}
+        }
+
+        @media (min-width: 1200px) {
+            div.test {
+                background: blue;
+            }
+			div.par{
+			background-color:black;
+			}
+        }
+    </style>
+</head>
+
+<body>
+<span style="take-rest"> Tablets/iPads 480px - 768px 
+    <div class="test">
+        <p class="par">Mobile Devices 320px - 480px <br>
+            Tablets/iPads 480px - 768px<br>
+            Laptops/Small Screens 768px - 1024px<br>
+            Desktops/Large Screens 1024px - 1200px<br>
+            Extra-large Devices 1200px and above</p>
+			 <p class="par">Mobile Devices 320px - 480px
+          <br>
+            Laptops/Small Screens 768px - 1024px<br>
+            Desktops/Large Screens 1024px - 1200px<br>
+            Extra-large Devices 1200px and above</p>
+			 <p class="par">Mobile Devices 320px - 480px <br>
+            Tablets/iPads 480px - 768px<br>
+            Laptops/Small Screens 768px - 1024px<br>
+            Desktops/Large Screens 1024px - 1200px<br>
+            Extra-large Devices 1200px and above</p>
+			 </span>
+    </div>
+</body>
+
+</html>
